@@ -1,58 +1,320 @@
 
 /***********************Preprints*********************/
 var preprintList = [
-  pubEntry('Solving Discounted Stochastic Two-Player Games with Near-Optimal Time and Sample Complexity ',
-		'2019',
-		'Manuscript',
-		'Aaron Sidford, Mengdi Wang,  Yinyu Ye',
-		'https://arxiv.org/abs/1908.11071'
-	),
-  pubEntry('On the Optimality of Sparse Model-Based Planning for Markov Decision Processes',
-		'2019',
-		'Manuscript',
-		'Alekh Agarwal, Sham Kakade',
-		'https://arxiv.org/abs/1906.03804'
-	),
-  pubEntry('Reinforcement Learning in Feature Space: Matrix Bandit, Kernels, and Regret Bound',
-		'2019',
-		'Manuscript',
-		' Mengdi Wang',
-		'https://arxiv.org/abs/1905.10389'
-	),
-  pubEntry('Learning to Control in Metric Space with Optimal Regret',
-		'2019',
-		'Manuscript',
-		'Chengzhuo Ni, Mengdi Wang',
-		'https://arxiv.org/abs/1905.01576'
-	),
-  pubEntry('Universal Streaming of Subset Norms ',
-		'2018',
-		'Manuscript',
-		'Vladimir Braverman, Robert Krauthgamer',
-		'https://arxiv.org/abs/1812.00241'
-	),
-  pubEntry('Variance Reduction Methods for Sublinear Reinforcement Learning',
-		'2018',
-		'Manuscript',
-		'Sham Kakade, Mengdi Wang',
-		'https://arxiv.org/abs/1802.09184'
-	),
-  pubEntry('Nearly Optimal Dynamic $k$-Means Clustering for High-Dimensional Data ',
-		'2018',
-		'Manuscript',
-		'Wei Hu, Zhao Song, Peilin Zhong',
-		'https://arxiv.org/abs/1802.00459'
-	),
-
 ]
 
 /************Put conference pubs here****************/
 var confList = [
+	pubEntry('Contexts can be Cheap: Solving Stochastic Contextual Bandits with Linear Bandit Algorithms',
+	'2023',
+	'COLT',
+	'Osama Hanna, Christina Fragouli',
+	'https://arxiv.org/abs/2211.05632'
+	),
+	pubEntry('Transferring In-Context Learning Ability From Language Models to Vision-Language Models',
+	'2023',
+	'ACL',
+	'Masoud Monajatipoor, Kai-Wei Chang',
+	''
+	),
+	pubEntry('Horizon-free Learning for Markov Decision Processes and Games: Stochastically Bounded Rewards and Improved Bounds',
+	'2023',
+	'ICML',
+	'Shengshi Li',
+	''
+	),
+	pubEntry('Distributed Contextual Linear Bandits with Minimax Optimal Communication Cost',
+	'2023',
+	'ICML',
+	'Sanae Amani, Tor Lattimore, András György',
+	'https://arxiv.org/abs/2205.13170'
+	),
+	pubEntry('Does Sparsity Help in Learning Misspecified Linear Bandits?',
+	'2023',
+	'ICML',
+	'Jialin Dong',
+	'https://arxiv.org/abs/2303.16998'
+	),
+	pubEntry('Low-Switching Policy Gradient with Exploration via Online Sensitivity Sampling',
+	'2023',
+	'ICML',
+	'Yunfan Li, Yiran Wang, Yu Cheng',
+	''
+	),
+	pubEntry('Multi-Agent Multi-Armed Bandits over Heterogeneous Erasure Channels',
+	'2023',
+	'ISIT',
+	'Merve Karakas, Osama Hanna, Christina Fragouli',
+	''
+	),
+
+	pubEntry('Provably Feedback-Efficient Reinforcement Learning via Active Reward Learning',
+	'2022',
+	'NeurIPS',
+	'Dingwen Kong',
+	'https://arxiv.org/abs/2304.08944'
+	),
+
+	pubEntry('Near-Optimal Sample Complexity Bounds for Constrained MDPs',
+	'2022',
+	'NeurIPS',
+	'Sharan Vaswani,  Csaba Szepesvari',
+	'https://arxiv.org/abs/2206.06270'
+	),
+
+	pubEntry('Learning in Distributed Contextual Linear Bandits Without Sharing the Context',
+	'2022',
+	'NeurIPS',
+	'Osama Hanna, Christina Fragouli',
+	'https://arxiv.org/abs/2206.04180'
+	),
+
+	pubEntry('On Improving Model-Free Algorithms for Decentralized Multi-Agent Reinforcement Learning',
+	'2022',
+	'ICML',
+	'Weichao Mao, Kaiqing Zhang, Tamer Basar',
+	'https://arxiv.org/abs/2110.05707'
+	),
+
+	pubEntry('On Improving Model-Free Algorithms for Decentralized Multi-Agent Reinforcement Learning',
+	'2022',
+	'ICML',
+	'Weichao Mao, Kaiqing Zhang, Tamer Basar',
+	'https://arxiv.org/abs/2110.05707'
+	),
+
+	pubEntry('Near-Optimal Reward-Free Exploration for Linear Mixture MDPs with Plug-in Solver',
+	'2022',
+	'ICLR',
+	'Xiaoyu Chen, Jiachen Hu, Liwei Wang <b>Spotlight Presentation</b>',
+	'https://openreview.net/forum?id=SidzxAb9k30'
+	),
+
+	pubEntry('Solving Multi-Arm Bandit Using a Few Bits of Communication',
+	'2022',
+	'AISTATS',
+	'Osama Hanna, Christina Fragouli',
+	'https://arxiv.org/abs/2111.06067'
+	),
+
+	pubEntry('Gap-Dependent Unsupervised Exploration for Reinforcement Learning',
+	'2022',
+	'AISTATS',
+	'Jingfeng Wu, Vladimir Braverman',
+	'https://arxiv.org/abs/2108.05439'
+	),
+
+	pubEntry('Doubly Pessimistic Algorithms for Strictly Safe Off-Policy Optimization',
+	'2022',
+	'CISS',
+	'Sanae Amani',
+	'https://offline-rl-neurips.github.io/2021/pdf/21.pdf'
+	),	
+
+	pubEntry('On the Value of Interaction and Function Approximation in Imitation Learning',
+	'2021',
+	'NeurIPS',
+	'Nived Rajaraman, Yanjun Han,  Jingbo Liu, Jiantao Jiao, Kannan Ramchandran',
+	'https://proceedings.neurips.cc/paper/2021/hash/09dbc1177211571ef3e1ca961cc39363-Abstract.html'
+	),	
+
+
+	pubEntry('Accommodating Picky Customers: Regret Bound and Exploration Complexity for Multi-Objective Reinforcement Learning',
+	'2021',
+	'NeurIPS',
+	'Jingfeng Wu, Vladimir Braverman',
+	'https://arxiv.org/abs/2011.13034'
+	),	
+
+	pubEntry('Breaking the Moments Condition Barrier: No-Regret Algorithm for Bandits with Super Heavy-Tailed Payoffs',
+	'2021',
+	'NeurIPS',
+	'Han Zhong, Jiayi Huang, Liwei Wang',
+	'https://arxiv.org/abs/2110.13876'
+	),	
+
+	pubEntry(' Settling the Horizon-Dependence of Sample Complexity in Reinforcement Learning',
+	'2021',
+	'FOCS',
+	'Yuanzhi Li, Ruosong Wang',
+	'https://arxiv.org/abs/2111.00633'
+	),	
+
+	pubEntry('Global Neighbor Sampling for Mixed CPU-GPU Training on Giant Graphs',
+	'2021',
+	'KDD',
+	'Jialin Dong, Da Zheng,  Geroge Karypis',
+	'https://arxiv.org/abs/2106.06150'
+	),	
+
+
+	pubEntry('Randomized Exploration in Reinforcement Learning with General Value Function Approximation',
+	'2021',
+	'ICML',
+	'Haque Ishfaq, Qiwen Cui, Alex Ayoub, Viet Nguyen, Zhuoran Yang, Zhaoran Wang, Doina Precup',
+	'https://arxiv.org/abs/2106.07841'
+	),
+
+	pubEntry('Provably Correct Optimization and Exploration with Non-linear Policies',
+	'2021',
+	'ICML',
+	'Fei Feng, Wotao Yin, Alekh Agarwal',
+	'https://arxiv.org/abs/2103.11559'
+	),
+
+	pubEntry('Safe Reinforcement Learning with Linear Function Approximation',
+	'2021',
+	'ICML',
+	'Sanae Amani, Christos Thrampoulidis',
+	''
+	),
+
+  pubEntry('Theoretically Principled Deep RL Acceleration via Nearest Neighbor Function Approximation',
+		'2021',
+		'AAAI',
+		'Junhong Sheng',
+		'https://www.aaai.org/AAAI21Papers/AAAI-5535.ShenJ.pdf'
+	),
+
+
+  pubEntry('Model-Based Multi-Agent RL in Zero-Sum Markov Games with Near-Optimal Sample Complexity',
+		'2020',
+		'NeurIPS',
+		'Kaiqing Zhang, Sham Kakade, Tamer Basar <br><b>Spotlight Presentation</b>',
+		'https://arxiv.org/abs/2007.07461'
+	),
+  
+  pubEntry('Provably Efficient Exploration for RL with Unsupervised Learning',
+		'2020',
+		'NeurIPS',
+		'Fei Feng, Ruosong Wang, Wotao Yin, Simon Du <br><b>Spotlight Presentation</b>',
+		'https://arxiv.org/abs/2003.06898'
+	),
+  
+  pubEntry('Preference-based Reinforcement Learning with Finite-Time Guarantees',
+		'2020',
+		'NeurIPS',
+		'Yichong Xu, Ruosong Wang, Aarti Singh, Artur Dubrawski <br><b>Spotlight Presentation</b>',
+		'https://arxiv.org/abs/2006.08910'
+	),
+
+  pubEntry('On Reward-Free Reinforcement Learning with Linear Function Approximation',
+		'2020',
+		'NeurIPS',
+		'Ruosong Wang, Simon Du, Ruslan Salakhutdinov',
+		'https://arxiv.org/abs/2006.11274'
+	),
+
+  pubEntry('Is Plug-in Solver Sample-Efficient for Feature-based Reinforcement Learning?',
+		'2020',
+		'NeurIPS',
+		'Qiwen Cui',
+		'https://arxiv.org/abs/2010.05673'
+	),
+
+
+  pubEntry('Toward the Fundamental Limits of Imitation Learning',
+		'2020',
+		'NeurIPS',
+		'Nived Rajaraman, Jiantao Jiao, Ramchandran Kannan',
+		'https://arxiv.org/abs/2009.05990'
+	),
+
+
+  pubEntry('Reinforcement Learning with General Value Function Approximation: Provably Efficient Approach via Bounded Eluder Dimension',
+		'2020',
+		'NeurIPS',
+		'Ruosong Wang, Ruslan Salakhutdinov',
+		'https://arxiv.org/abs/2005.10804v3'
+	),
+
+
+  pubEntry('Is Long Horizon RL More Difficult Than Short Horizon RL?',
+		'2020',
+		'NeurIPS',
+		'Ruosong Wang, Simon Du, Sham Kakade',
+		'https://arxiv.org/abs/2005.00527'
+	),
+
+
+  pubEntry('Planning with General Objective Functions: Going Beyond Total Rewards',
+		'2020',
+		'NeurIPS',
+		'Ruosong Wang, Peilin Zhong, Simon Du, Ruslan Salakhutdinov',
+		'https://proceedings.neurips.cc/paper/2020/file/a6a767bbb2e3513233f942e0ff24272c-Paper.pdf'
+	),
+
+
+
+
+	pubEntry('Model-Based Reinforcement Learning with Value-Targeted Regression',
+		'2020',
+		'ICML',
+		'Alex Ayoub, Zeyu Jia, Csaba Szepesvari, Mengdi Wang',
+		'https://arxiv.org/abs/2006.01107'
+	),
+  
+  pubEntry('Reinforcement Learning in Feature Space: Matrix Bandit, Kernels, and Regret Bound',
+		'2020',
+		'ICML',
+		'Mengdi Wang',
+		'https://arxiv.org/pdf/1905.10389.pdf'
+	),
+  
+  pubEntry('Obtaining Adjustable Regularization for Free via Iterate Averaging',
+		'2020',
+		'ICML',
+		'Jingfeng Wu, Vladimir Braverman',
+		''
+	),
+  
+  pubEntry('Nearly Linear Row Sampling Algorithm for Quantile Regression',
+		'2020',
+		'ICML',
+		'Yi Li, Ruosong Wang, Hanrui Zhang',
+		'https://arxiv.org/abs/2006.08397'
+	),
+  
+  pubEntry('Model-Based Reinforcement Learning with a Generative Model is Minimax Optimal',
+		'2020',
+		'COLT',
+		'Alekh Agarwal, Sham Kakade',
+		'https://arxiv.org/abs/1906.03804'
+	),
+  
+	pubEntry('Sketching Transformed Matrices with Applications to Natural Language Processing',
+		'2020',
+		'AISTATS',
+		'Yingyu Liang, Zhao Song,  Mengdi Wang, Xin Yang',
+		'https://arxiv.org/abs/2002.09812'
+	),
+
+	pubEntry('Solving Discounted Stochastic Two-Player Games with Near-Optimal Time and Sample Complexity ',
+		'2020',
+		'AISTATS',
+		'Aaron Sidford, Mengdi Wang,  Yinyu Ye',
+		'https://arxiv.org/abs/1908.11071'
+	),
+
+	pubEntry('Learning to Control in Metric Space with Optimal Regret',
+		'2019',
+		'57th Annual Allerton Conference on Communication, Control, and Computing',
+		'Chengzhuo Ni, Mengdi Wang',
+		'https://arxiv.org/abs/1905.01576'
+	),
+	
+	pubEntry('Is A Good Representation Sufficient for Sample Efficient Reinforcement Learning?',
+		'2019',
+		'ICLR',
+		'Simon S. Du, Sham M Kakade, Ruosong Wang',
+		'https://arxiv.org/pdf/1910.03016.pdf'
+	),	
+
   pubEntry('Efficient Symmetric Norm Regression via Linear Sketching',
 		'2019',
 		'NeurIPS',
 		'Zhao Song, Ruosong Wang, Hongyang Zhang, Peilin Zhong',
-		''
+		'https://arxiv.org/abs/1910.01788'
 	),
   pubEntry('Online Factorization and Partition of Complex Networks by Random Walk',
 		'2019',

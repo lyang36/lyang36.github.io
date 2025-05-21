@@ -1,81 +1,78 @@
 
 /***********************Preprints*********************/
 var selectedList = [
-  pubEntry('Efficient Symmetric Norm Regression via Linear Sketching',
-		'2019',
-		'NeurIPS',
-		'Zhao Song, Ruosong Wang, Hongyang Zhang, Peilin Zhong',
-		''
+	pubEntry('Contexts can be Cheap: Solving Stochastic Contextual Bandits with Linear Bandit Algorithms',
+	'2023',
+	'COLT',
+	'Osama Hanna, Christina Fragouli',
+	'https://arxiv.org/abs/2211.05632'
+	),
+	pubEntry('Does Sparsity Help in Learning Misspecified Linear Bandits?',
+	'2023',
+	'ICML',
+	'Jialin Dong',
+	'https://arxiv.org/abs/2303.16998'
+	),
+	pubEntry('Near-Optimal Sample Complexity Bounds for Constrained MDPs',
+	'2022',
+	'NeurIPS',
+	'Sharan Vaswani,  Csaba Szepesvari',
+	'https://arxiv.org/abs/2206.06270'
 	),
 
-  pubEntry('Sample-Optimal Parametric Q-Learning with Linear Transition Models',
-		'2019',
+	pubEntry(' Settling the Horizon-Dependence of Sample Complexity in Reinforcement Learning',
+	'2021',
+	'FOCS',
+	'Yuanzhi Li, Ruosong Wang',
+	'https://arxiv.org/abs/2111.00633'
+	),	
+
+
+
+  pubEntry('Reinforcement Learning with General Value Function Approximation: Provably Efficient Approach via Bounded Eluder Dimension',
+		'2020',
+		'NeurIPS',
+		'Ruosong Wang, Ruslan Salakhutdinov',
+		'https://arxiv.org/abs/2005.10804v3'
+	),
+
+
+
+  pubEntry('Model-Based Reinforcement Learning with Value-Targeted Regression',
+		'2020',
+		'ICML',
+		'Alex Ayoub, Zeyu Jia, Csaba Szepesvari, Mengdi Wang',
+		'https://arxiv.org/abs/2006.01107'
+	),
+  
+  pubEntry('Reinforcement Learning in Feature Space: Matrix Bandit, Kernels, and Regret Bound',
+		'2020',
 		'ICML',
 		'Mengdi Wang',
-		'https://arxiv.org/abs/1902.04779'
-	),
-
-  pubEntry('The One-Way Communication Complexity of Dynamic Time Warping Distance',
-		'2019',
-		'SoCG',
-		'Vladimir Braverman,Moses Charikar, William Henry Kuszmaul, David Woodruff </br><b>Invited to the special issue for SoCG 2019.</b>',
-		'https://arxiv.org/pdf/1903.03520.pdf',
-	),
-
-  pubEntry('Misspecified Nonconvex Statistical Optimization for Phase Retrieval',
-		'2018',
-    "Mathematical Programming",
-		'Zhuoran Yang, Ethan X. Fang, Tuo Zhao, Zhaoran Wang, Matey Neykov',
-		"https://arxiv.org/abs/1712.06245",
-	),
-
-  pubEntry('Near-Optimal Time and Sample Complexities for Solving Discounted Markov Decision Process with a Generative Mode',
-		'2018',
-		'NeurIPS',
-		'Aaron Sidford, Mengdi Wang, Xian Wu, and Yinyu Ye</br><b>Best poster award, Princeton Day of Optimization (2018).</b>',
-		'https://arxiv.org/abs/1806.01492',
-    'A result that resolves the long standing open-problem of the sample complexity of reinforcement learning with a generative model.'
+		'https://arxiv.org/pdf/1905.10389.pdf'
 	),
   
-  pubEntry('Dimensionality Reduction for Stationary Time Series via Stochastic Nonconvex Optimization',
-		'2018',
-		'NeurIPS',
-		'Minshuo Chen, Mengdi Wang, Tuo Zhao',
-		'https://arxiv.org/pdf/1803.02312.pdf'
+  pubEntry('Model-Based Reinforcement Learning with a Generative Model is Minimax Optimal',
+		'2020',
+		'COLT',
+		'Alekh Agarwal, Sham Kakade',
+		'https://arxiv.org/abs/1906.03804'
 	),
   
-  
-	pubEntry('The Physical Systems Behind Optimization Algorithms',
-		'2018',
-		'NeurIPS',
-		'R. Arora, V. Braverman, Tuo Zhao',
-		"https://arxiv.org/abs/1612.02803",
-    "A result that connects the optimalization algorithm with a physical system."
-	),
+	pubEntry('Is A Good Representation Sufficient for Sample Efficient Reinforcement Learning?',
+		'2020',
+		'ICLR',
+		'Simon S. Du, Sham M Kakade, Ruosong Wang <br><b>Spotlight Presentation</b>',
+		'https://arxiv.org/pdf/1910.03016.pdf'
+	),	
 
+	pubEntry('Sample-Optimal Parametric Q-Learning with Linear Transition Models',
+	'2019',
+	'ICML',
+	'Mengdi Wang',
+	'https://arxiv.org/abs/1902.04779'
+),
 
-	pubEntry('Matrix Norms in Data Streams: Faster, Multi-Pass and Row-Order',
-		'2018',
-		'ICML',
-		'Vladimir Braverman, Stephen R. Chestnut, Robert Krauthgamer, Yi Li, David P. Woodruff',
-		"https://arxiv.org/abs/1609.05885",
-    "A time-and-space efficient streaming algorithm of estimating matrix norms."
-	),
-
-
-  pubEntry('Revisiting Frequency Moment Estimation in Random Order Streams',
-		'2018',
-		'ICALP',
-		'Vladimir Braverman, Emanuele Viola, and David P. Woodruff ',
-		'https://arxiv.org/abs/1803.02270'
-	),
-  
-	pubEntry('Approximate Convex Hull of Data Streams',
-		'2018',
-		'ICALP',
-		'Avrim Blum, Vladimir Braverman, Ananya Kumar, Harry Lang ',
-		'https://arxiv.org/pdf/1712.04564.pdf'
-	)
 ]
 
 function pubEntry(title, year, journual, coAuthors, pdfLink, intro = ""){
@@ -97,7 +94,7 @@ function pubEntry(title, year, journual, coAuthors, pdfLink, intro = ""){
 
 document.write('\
 	<div class="features" id="pub-astro">	\
-		<h4>Recent Publications</h4> \
+		<h4>Selected Publications</h4> \
 ');
 
 for (i = 0; i < selectedList.length; i++) { 
