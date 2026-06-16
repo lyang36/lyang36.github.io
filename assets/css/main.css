@@ -2230,6 +2230,117 @@
 			margin-bottom: 0;
 		}
 
+	.application-grid {
+		display: grid;
+		gap: 1em;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		margin: 0.5em 0 1.75em 0;
+	}
+
+		.application-card {
+			background: #ffffff;
+			border: solid 1px #e4e9ef;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+
+			.application-card h5 {
+				font-size: 0.95em;
+				margin: 0;
+				padding: 0.75em 0.75em 0.85em 0.75em;
+				text-align: center;
+			}
+
+		.application-visual {
+			aspect-ratio: 4 / 3;
+			background: #fbfcfd;
+			display: block;
+			width: 100%;
+		}
+
+			.application-visual svg {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+
+			.application-visual .domain-bg {
+				fill: #f7fbfc;
+			}
+
+			.application-visual .domain-panel {
+				fill: #ffffff;
+				stroke: #d7e2ea;
+				stroke-width: 2;
+			}
+
+			.application-visual .domain-line,
+			.application-visual .domain-loop {
+				fill: none;
+				stroke: #688399;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-width: 4;
+			}
+
+			.application-visual .domain-loop {
+				stroke-dasharray: 8 8;
+			}
+
+			.application-visual .domain-node {
+				fill: #8BB8E8;
+			}
+
+			.application-visual .domain-orbit {
+				fill: none;
+				stroke: #b8cad8;
+				stroke-width: 3;
+			}
+
+			.application-visual .domain-accent {
+				fill: none;
+				stroke: #003B5C;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+				stroke-width: 5;
+			}
+
+			.application-healthcare .domain-accent {
+				fill: #d96767;
+				stroke: #d96767;
+			}
+
+			.application-robotics .domain-accent {
+				fill: #b56b2a;
+				stroke: #b56b2a;
+			}
+
+			.application-science .domain-accent {
+				fill: #0b6f6a;
+				stroke: #0b6f6a;
+			}
+
+			.application-finance .domain-accent {
+				fill: none;
+				stroke: #6f7d22;
+			}
+
+	@media screen and (max-width: 736px) {
+
+		.application-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.application-grid {
+			grid-template-columns: 1fr;
+		}
+
+	}
+
 		ul.actions {
 			cursor: default;
 			list-style: none;
