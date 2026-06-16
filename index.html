@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=layout-experiment-7" />
 		<!--script src="assets/js/w3data.js"></script-->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollzer.min.js"></script>
@@ -35,7 +35,7 @@
 			<section id="header">
 				<header>
 					<span class="image avatar"><img src="images/avatar01.jpg" alt="Lin" /></span>
-					<h1 id="logo"><a href="#about">Lin F. YANG</a></h1>
+					<h1 id="logo"><a href="#about">Lin F. YANG | 杨林</a></h1>
 					<p> Ph.D. <br>University of California, Los Angeles</p>
 				</header>
 				<nav id="nav">
@@ -45,7 +45,6 @@
 						<li><a href="#service">Service</a></li>
 						<li><a href="#talks">People</a></li>	
 						<li><a href="#education">Education</a></li>
-						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -70,10 +69,10 @@
   <div class="container">
     <img src="images/evi1.jpg" alt="Engineering" style="width:100%;margin-top:-0.8em">
     <header class="major">
-      <h2><a href="http://drlinyang.net">LIN F. YANG</a></h2>
+      <h2><a href="http://drlinyang.net">LIN F. YANG | 杨林</a></h2>
     </header>
 
-    <p>Dr. Lin Yang (杨林) is currently an Associate Professor (tenured) in the
+    <p>Dr. Lin Yang is currently an Associate Professor (tenured) in the
     <a href="https://www.ee.ucla.edu/">Electrical and Computer Engineering Department</a> and <a href="https://www.cs.ucla.edu"> Computer Science Department 
     </a> at the University of California, Los Angeles.</p>
 
@@ -92,6 +91,7 @@
     <i><a href="http://www.sdss.jhu.edu/~szalay/">Alex Szalay</a></i> and 
     <i><a href="http://www.cs.jhu.edu/~vova/">Vova Braverman</a></i>.</p>
 
+    <p class="bio-links"><a href="bio-zh.html">中文简介</a></p>
     <p>[Last updated Jun. 2026]</p>
   </div>
 </section>
@@ -99,72 +99,86 @@
 <section id="research">
   <div class="container">
     <h3>Research</h3>
-    <p>I study the foundations and systems principles behind reliable learning and decision-making. My recent interests connect reinforcement learning, agentic AI frameworks, LLM fine-tuning, and LLM compression and quantization: how agents should gather feedback, adapt language models to specialized tasks, run efficiently under resource constraints, and make sequential decisions with safety guarantees.</p>
+    <div class="research-lead">
+      <div class="research-visual">
+        <p class="research-intro">I study the foundations and systems principles behind reliable learning and decision-making. My recent interests connect reinforcement learning, agentic AI frameworks, LLM fine-tuning, and LLM compression and quantization.</p>
 
-    <div class="research-diagram">
-      <svg class="research-map" viewBox="0 0 900 540" role="img" aria-labelledby="research-map-title research-map-desc">
-        <title id="research-map-title">Research map connecting reinforcement learning, agentic frameworks, LLM fine-tuning, and LLM compression</title>
-        <desc id="research-map-desc">A diagram showing four research areas feeding into efficient and reliable AI: reinforcement learning, agentic frameworks, LLM fine-tuning, and LLM compression and quantization.</desc>
-        <defs>
-          <marker id="research-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-            <path d="M2,2 L10,6 L2,10 Z"></path>
-          </marker>
-        </defs>
+        <div class="research-diagram">
+          <svg class="research-map" viewBox="0 0 900 540" role="img" aria-labelledby="research-map-title research-map-desc">
+            <title id="research-map-title">Research map connecting reinforcement learning, agentic frameworks, LLM fine-tuning, and LLM compression</title>
+            <desc id="research-map-desc">A diagram showing four research areas feeding into efficient and reliable AI: reinforcement learning, agentic frameworks, LLM fine-tuning, and LLM compression and quantization.</desc>
+            <defs>
+              <marker id="research-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                <path d="M2,2 L10,6 L2,10 Z"></path>
+              </marker>
+            </defs>
 
-        <path class="research-link" d="M315 118 C365 130 390 185 410 220" marker-end="url(#research-arrow)"></path>
-        <path class="research-link" d="M585 118 C535 130 510 185 490 220" marker-end="url(#research-arrow)"></path>
-        <path class="research-link" d="M315 418 C365 405 390 345 410 320" marker-end="url(#research-arrow)"></path>
-        <path class="research-link" d="M585 418 C535 405 510 345 490 320" marker-end="url(#research-arrow)"></path>
-        <path class="research-loop" d="M188 180 C165 240 165 300 188 360" marker-end="url(#research-arrow)"></path>
-        <path class="research-loop" d="M712 180 C735 240 735 300 712 360" marker-end="url(#research-arrow)"></path>
+            <path class="research-link" d="M315 118 C365 130 390 185 410 220" marker-end="url(#research-arrow)"></path>
+            <path class="research-link" d="M585 118 C535 130 510 185 490 220" marker-end="url(#research-arrow)"></path>
+            <path class="research-link" d="M315 418 C365 405 390 345 410 320" marker-end="url(#research-arrow)"></path>
+            <path class="research-link" d="M585 418 C535 405 510 345 490 320" marker-end="url(#research-arrow)"></path>
+            <path class="research-loop" d="M188 180 C165 240 165 300 188 360" marker-end="url(#research-arrow)"></path>
+            <path class="research-loop" d="M712 180 C735 240 735 300 712 360" marker-end="url(#research-arrow)"></path>
 
-        <g class="research-node research-node-rl" transform="translate(60 55)">
-          <rect width="255" height="125" rx="8"></rect>
-          <text x="127.5" y="42">
-            <tspan x="127.5">Reinforcement</tspan>
-            <tspan x="127.5" dy="24">Learning</tspan>
-            <tspan class="research-node-detail" x="127.5" dy="31">exploration, safety, efficiency</tspan>
-          </text>
-        </g>
+            <g class="research-node research-node-rl" transform="translate(60 55)">
+              <rect width="255" height="125" rx="8"></rect>
+              <text x="127.5" y="42">
+                <tspan x="127.5">Reinforcement</tspan>
+                <tspan x="127.5" dy="24">Learning</tspan>
+                <tspan class="research-node-detail" x="127.5" dy="31">exploration, safety, efficiency</tspan>
+              </text>
+            </g>
 
-        <g class="research-node research-node-agent" transform="translate(585 55)">
-          <rect width="255" height="125" rx="8"></rect>
-          <text x="127.5" y="42">
-            <tspan x="127.5">Agentic AI</tspan>
-            <tspan x="127.5" dy="24">Frameworks</tspan>
-            <tspan class="research-node-detail" x="127.5" dy="31">planning, memory, feedback</tspan>
-          </text>
-        </g>
+            <g class="research-node research-node-agent" transform="translate(585 55)">
+              <rect width="255" height="125" rx="8"></rect>
+              <text x="127.5" y="42">
+                <tspan x="127.5">Agentic AI</tspan>
+                <tspan x="127.5" dy="24">Frameworks</tspan>
+                <tspan class="research-node-detail" x="127.5" dy="31">planning, memory, feedback</tspan>
+              </text>
+            </g>
 
-        <g class="research-node research-node-llm" transform="translate(60 360)">
-          <rect width="255" height="115" rx="8"></rect>
-          <text x="127.5" y="45">
-            <tspan x="127.5">LLM Fine-Tuning</tspan>
-            <tspan class="research-node-detail" x="127.5" dy="31">adaptation, alignment, evaluation</tspan>
-          </text>
-        </g>
+            <g class="research-node research-node-llm" transform="translate(60 360)">
+              <rect width="255" height="115" rx="8"></rect>
+              <text x="127.5" y="45">
+                <tspan x="127.5">LLM Fine-Tuning</tspan>
+                <tspan class="research-node-detail" x="127.5" dy="31">adaptation, alignment, evaluation</tspan>
+              </text>
+            </g>
 
-        <g class="research-node research-node-compression" transform="translate(585 360)">
-          <rect width="255" height="115" rx="8"></rect>
-          <text x="127.5" y="38">
-            <tspan x="127.5">LLM Compression</tspan>
-            <tspan x="127.5" dy="24">&amp; Quantization</tspan>
-            <tspan class="research-node-detail" x="127.5" dy="31">small models, fast inference</tspan>
-          </text>
-        </g>
+            <g class="research-node research-node-compression" transform="translate(585 360)">
+              <rect width="255" height="115" rx="8"></rect>
+              <text x="127.5" y="38">
+                <tspan x="127.5">LLM Compression</tspan>
+                <tspan x="127.5" dy="24">&amp; Quantization</tspan>
+                <tspan class="research-node-detail" x="127.5" dy="31">small models, fast inference</tspan>
+              </text>
+            </g>
 
-        <g class="research-center" transform="translate(315 220)">
-          <rect width="270" height="100" rx="8"></rect>
-          <text x="135" y="39">
-            <tspan x="135">Efficient, Reliable</tspan>
-            <tspan x="135" dy="25">AI Systems</tspan>
-          </text>
-        </g>
-      </svg>
-    </div>
+            <g class="research-center" transform="translate(315 220)">
+              <rect width="270" height="100" rx="8"></rect>
+              <text x="135" y="39">
+                <tspan x="135">Efficient, Reliable</tspan>
+                <tspan x="135" dy="25">AI Systems</tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
 
-    <div class="featured-work">
-      <p><b>Featured work:</b> <a href="https://arxiv.org/abs/2507.15855" target="_blank" rel="noopener noreferrer">Winning Gold at IMO 2025 with a Model-Agnostic Verification-and-Refinement Pipeline</a>, with Yichen Huang. We study how verification and iterative refinement can turn strong general-purpose LLMs into reliable mathematical reasoning agents.</p>
+      </div>
+
+      <div class="research-copy">
+        <div class="research-topics">
+          <p><b>Reinforcement learning</b><span>provable sample efficiency, safe exploration, and robust decision-making under uncertainty</span></p>
+          <p><b>Agentic frameworks</b><span>AI agents that plan, use tools, remember context, and learn from feedback</span></p>
+          <p><b>LLM fine-tuning</b><span>task adaptation while preserving reliability, efficiency, and evaluation rigor</span></p>
+          <p><b>LLM compression and quantization</b><span>lower memory and compute costs for faster, broader deployment</span></p>
+        </div>
+
+        <div class="featured-work">
+          <p><b>Featured work:</b> <a href="https://arxiv.org/abs/2507.15855" target="_blank" rel="noopener noreferrer">Winning Gold at IMO 2025 with a Model-Agnostic Verification-and-Refinement Pipeline</a>, with Yichen Huang. We study how verification and iterative refinement can turn strong general-purpose LLMs into reliable mathematical reasoning agents.</p>
+        </div>
+      </div>
     </div>
 
     <h4>Application Domains</h4>
@@ -232,13 +246,8 @@
       </div>
     </div>
 
-    <ul class="research-topics">
-      <li><b>Reinforcement learning:</b> algorithms with provable sample efficiency, safe exploration, and robust decision-making under uncertainty.</li>
-      <li><b>Agentic frameworks:</b> principled ways to design AI agents that plan, use tools, remember context, and learn from feedback.</li>
-      <li><b>LLM fine-tuning:</b> methods for adapting large language models to specialized tasks while preserving reliability, efficiency, and evaluation rigor.</li>
-      <li><b>LLM compression and quantization:</b> techniques for reducing memory and compute costs so language models can run faster and more broadly without losing essential capabilities.</li>
-    </ul>
-    <p>For publications and citation records, visit my <a href="https://scholar.google.com/citations?user=umivlPQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar profile</a> or <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Lin_F=" target="_blank" rel="noopener noreferrer">DBLP</a>.</p>
+    <p class="research-links">Publication records: <a href="https://scholar.google.com/citations?user=umivlPQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> / <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Lin_F=" target="_blank" rel="noopener noreferrer">DBLP</a></p>
+
   </div>
 </section>
 
@@ -258,13 +267,13 @@
 							<section id="service">
 								<div class="container">
 									<h3>Service</h3>
-									<ul>
-                      <li><b>Senior Area Chair:</b> NeurIPS 2026</li>
-                      <li><b>Area Chair:</b> ICLR, AISTATS, ICML, NeurIPS</li>
-                      <li><b>Senior Program Committee:</b> AAAI</li>
-                      <li><b>Conference Reviewing:</b> AAAI, ICML, NeurIPS, STOC, FOCS, COLT, PODS, ITCS, ACML, AISTATS, ICALP, RANDOM, ESA, LATIN, KAIS, FSTTCS</li>
-                      <li><b>Journal Reviewing:</b> Theoretical Computer Science, QIC, JCSS, OPRE, TMLR</li>
-									</ul>
+									<div class="compact-list service-list">
+										<p><b>Senior Area Chair</b><span>NeurIPS 2026</span></p>
+										<p><b>Area Chair</b><span>ICLR, AISTATS, ICML, NeurIPS</span></p>
+										<p><b>Senior Program Committee</b><span>AAAI</span></p>
+										<p><b>Conference Reviewing</b><span>AAAI, ICML, NeurIPS, STOC, FOCS, COLT, PODS, ITCS, ACML, AISTATS, ICALP, RANDOM, ESA, LATIN, KAIS, FSTTCS</span></p>
+										<p><b>Journal Reviewing</b><span>Theoretical Computer Science, QIC, JCSS, OPRE, TMLR</span></p>
+									</div>
 								</div>
 							</section>
  
@@ -274,25 +283,37 @@
 							<div class="container">
 								<h3>People</h3>
 
-				<b>Students</b>
-				<ul class="icons">
-					<li>Yunfan Li</li>
-					<li>Chang Liu</li>
-					<li>Lawrence Liu</li>
-				</ul>
-				<b>Alumni</b>
-				<ul class="icons">
-					<li><a href="https://www.arni.ee.ucla.edu/people/osama-hanna/">Osama Hanna</a> (co-advising with Prof. Christina Fragouli. First Job: Meta) </li>
-					<li><a href="https://dblp.org/pid/211/3968.html">Jialin Dong</a> (First Job: SAP Labs) </li>
-					<li><a href="https://scholar.google.com/citations?user=qlwIFJsAAAAJ&hl=en">Sanae Amani</a> (First Job: PayPal)</li>
-					<li><a href="https://scholar.google.com/citations?user=VLpMm-cAAAAJ&hl=en">Masoud Monajatipoor</a> (co-advising with <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>, First Job: Optum)</li>
-					<li><a href="https://www.math.ucla.edu/~fei.feng/">Fei Feng</a> (co-advising with <a href="https://www.math.ucla.edu/~wotaoyin/">Wotao Yin</a>, First Job: Pinterest)</li>
-					<li>Qiwen Cui (former undergraduate advisee, Ph.D. degree from UW)</li>
-					<li>Kunhe Yang (former undergraduate advisee, now Ph.D. student at Berkeley)</li>
-					<li>Junhong Shen (former undergraduate advisee, now Ph.D. student at CMU)</li>
-					<li>Jinghan Wang (former undergraduate advisee, now Ph.D. student at UMD)</li>
-					<li>Dingwen Kong (former undergraduate advisee, now Ph.D. student at MIT)</li>
-				</ul>
+								<div class="people-grid">
+									<div class="people-group">
+										<h4>Students</h4>
+										<ul>
+											<li>Yunfan Li</li>
+											<li>Chang Liu</li>
+											<li>Lawrence Liu</li>
+										</ul>
+									</div>
+									<div class="people-group">
+										<h4>Ph.D. Alumni</h4>
+										<ul>
+											<li><a href="https://www.arni.ee.ucla.edu/people/osama-hanna/">Osama Hanna</a> <span>Meta; co-advised with Christina Fragouli</span></li>
+											<li><a href="https://www.linkedin.com/in/seungmin-jung35">Seungmin Jung</a> <span>Postdoc at UCSF; co-advised with <a href="https://samueli.ucla.edu/people/jacob-rosen/">Jacob Rosen</a></span></li>
+											<li><a href="https://dblp.org/pid/211/3968.html">Jialin Dong</a> <span>SAP Labs</span></li>
+											<li><a href="https://scholar.google.com/citations?user=qlwIFJsAAAAJ&hl=en">Sanae Amani</a> <span>PayPal</span></li>
+											<li><a href="https://scholar.google.com/citations?user=VLpMm-cAAAAJ&hl=en">Masoud Monajatipoor</a> <span>Optum; co-advised with <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a></span></li>
+											<li><a href="https://www.math.ucla.edu/~fei.feng/">Fei Feng</a> <span>Pinterest; co-advised with <a href="https://www.math.ucla.edu/~wotaoyin/">Wotao Yin</a></span></li>
+										</ul>
+										<details class="people-more">
+											<summary>Other former advisees</summary>
+											<ul>
+												<li>Qiwen Cui <span>former undergraduate advisee; Ph.D. from UW</span></li>
+												<li>Kunhe Yang <span>former undergraduate advisee; Ph.D. student at Berkeley</span></li>
+												<li>Junhong Shen <span>former undergraduate advisee; Ph.D. student at CMU</span></li>
+												<li>Jinghan Wang <span>former undergraduate advisee; Ph.D. student at UMD</span></li>
+												<li>Dingwen Kong <span>former undergraduate advisee; Ph.D. student at MIT</span></li>
+											</ul>
+										</details>
+									</div>
+								</div>
                     <!--<b>Collaborators</b> (alphabetical order)
 								<ul class="icons">
                     <li><a href='http://alekhagarwal.net/'>Alekh Agarwal</li>
@@ -366,48 +387,26 @@
 							<section id="education">
 								<div class="container">
 									<h3>Education</h3>
-									Johns Hopkins University, Baltimore, MD<br>
-										<ul>
-											<li>Ph.D. in Computer Science, Advisors: Vladimir Braverman, Alex Szalay</li> 
-											<li>Ph.D. in Physics & Astronomy, Advisor: Alex Szalay</li>
-											<li>MS.E. in Computer Science (GPA 4.0/4.0)</li>
-										</ul>
-									
-									Tsinghua University, Beijing, China<br>
-										<ul>
-											<li>B.S. in Math & Physics with High Honors</li>
-										</ul>
-									
+									<div class="education-grid">
+										<article class="education-item">
+											<h4><span class="education-logo education-logo-jhu" aria-hidden="true">JHU</span> Johns Hopkins University <span>Baltimore, MD</span></h4>
+											<p>Ph.D. in Computer Science, Advisors: Vladimir Braverman, Alex Szalay; Ph.D. in Physics &amp; Astronomy, Advisor: Alex Szalay; MS.E. in Computer Science (GPA 4.0/4.0)</p>
+										</article>
+
+										<article class="education-item">
+											<h4><span class="education-logo education-logo-thu" aria-hidden="true">THU</span> Tsinghua University <span>Beijing, China</span></h4>
+											<p>B.S. in Math &amp; Physics with High Honors</p>
+										</article>
+									</div>
 								</div>
 							</section>
               
-						<!-- Contact -->
-							<section id="contact">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Email: linyang[at]ee[dot]ucla[dot]edu</p>
-
-                  <p>My middle name Forrest is a translation 
-											of my first name (林). 
-											My publication name is Lin F. Yang -- to distinguish me from many Lin Yang's.
-											Note that my official
-											name (Lin Yang OR 杨林) does not contain a middle name.
-                  </p>
-								</div>
-
-
-											
-							</section>
 					</div>
 
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
-							<ul class="copyright">
-								<li>Design: partially based on <a href="http://html5up.net">HTML5 UP</a></li>
-								<li><a href="https://github.com/lyang36/lyangHomePage">Source Code</a></li>
-								<!--li>CV: <a href="cv.pdf" class="icon fa-file-pdf-o"></a></li-->
-							</ul>
+							<p class="footer-contact">Email: linyang[at]ee[dot]ucla[dot]edu <span>Official name: Lin Yang OR 杨林</span> <span>Publication name: Lin F. Yang</span></p>
 						</div>
 					</section>
 
