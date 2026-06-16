@@ -3686,12 +3686,14 @@
 		padding: 0.85em 1em;
 	}
 
-	.application-card {
+	.application-card,
+	.research-topics p {
 		box-shadow: 0 10px 22px rgba(36, 49, 61, 0.07);
 		transition: transform 0.18s ease, box-shadow 0.18s ease;
 	}
 
-		.application-card:hover {
+		.application-card:hover,
+		.research-topics p:hover {
 			box-shadow: 0 16px 28px rgba(36, 49, 61, 0.12);
 			transform: translateY(-2px);
 		}
@@ -3998,6 +4000,7 @@
 			}
 
 		.research-diagram,
+		.research-topics p,
 		.application-card {
 			border-color: var(--border-soft);
 		}
